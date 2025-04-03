@@ -10,13 +10,13 @@ library.add(faLinkedinIn, faInstagram, faDiscord, faGithub);
 
 const FooterBottom = () => {
   return (
-    <div className="relative mt-10 text-white w-full h-auto bg-black">
+    <div className=" text-white w-full h-auto bg-gradient-to-r from-gray-900 to-black">
       {/* <div className="absolute bottom-0   w-full h-auto -z-10">
         <BackgroundVideo />
         <div className="absolute inset-0 bg-black opacity-40"></div>
       </div> */}
 
-      <div className="relative text-white z-10 w-full py-20 lg:px-20 px-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  items-start items-center">
+      <div className=" text-white z-10 w-full py-20 lg:px-20 px-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  items-center">
         <div className="flex flex-col h-full text-sm space-y-3 lg:px-8 py-5 ">
           <Logo />
           <p>
@@ -52,7 +52,7 @@ const FooterBottom = () => {
         </div>
       </div>
 
-      <div className="relative z-10 text-black w-full bottom-0 bg-primary py-3 md:flex md:flex-row flex flex-col justify-center md:justify-around items-center text-xs">
+      <div className="relative z-10 text-white w-full bottom-0 bg-primary py-3 md:flex md:flex-row flex flex-col justify-center md:justify-around items-center text-xs">
         <p>© 2024, INFINETWORX. All rights reserved.</p>
         <p>Terms and Conditions | Privacy Policy</p>
       </div>

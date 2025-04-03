@@ -27,7 +27,7 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <button className="px-6 py-2 bg-primary text-white rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <button className="px-6 py-2 hidden md:flex bg-primary text-white rounded-lg shadow-lg hover:scale-105 transition-transform">
           Get Started
         </button>
 
@@ -43,7 +43,7 @@ const Header = () => {
       {/* Mobile Menu (Only visible when menuOpen is true) */}
       {menuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-black bg-opacity-90 text-white py-5 flex flex-col items-center space-y-5 transition-all">
-          {["Home", "Discover Infinetworx", "Services", "Contact", "About Us"].map((item, index) => (
+          {["Home", "Discover Infinetworx", "Services", "Contact", "About Us", "Get Started"].map((item, index) => (
             <a 
               key={index} 
               href={`#${item.toLowerCase().replace(/\s+/g, "")}`} 
