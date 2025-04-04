@@ -10,20 +10,7 @@ import ContactForm from '../components/home/ContactForm';
 
 const HomePage: React.FC = () => {
 
-  // Define the createTag function here, if it's not already defined
-  const createTag = () => {
-    if (typeof document !== "undefined") {
-      const tag = document.createElement('div');
-      tag.textContent = 'This is a dynamic tag';
-      document.body.appendChild(tag);
-    }
-  };
 
-  useEffect(() => {
-    if (typeof window !== "undefined" && typeof document !== "undefined") {
-      createTag();  // Call the function after the component mounts
-    }
-  }, []);
 
   return (
     <div className="w-full ">
