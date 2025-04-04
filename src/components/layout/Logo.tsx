@@ -11,10 +11,10 @@ const Logo = () => {
         <div className='flex items-center gap-2'>
         <Image 
           src="/logo.png" 
-          width={60} 
-          height={60} 
+          width={50} 
+          height={50} 
           alt="Logo" />
-          <span className={`company-name ${isScrolled ? 'visible' : ''} text-2xl text-white font-bold`}>
+          <span className={`company-name ${isScrolled ? 'visible' : ''} md:text-2xl text-lg text-white font-bold`}>
             INFINETWORX
           </span>
         </div>
