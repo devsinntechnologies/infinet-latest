@@ -9,9 +9,9 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80 shadow-lg transition-all duration-300"
       style={{ backgroundColor: "rgba(41, 39, 39, 0.85)" }}
     >
-      <div className="flex justify-between items-center w-full max-w-7xl mx-auto py-4 px-6 lg:px-24">
+      <div className="flex justify-between items-center w-full   py-4 px-6 lg:px-16">
         {/* Logo */}
-        <Logo />
+       <div> <Logo /></div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6 text-sm text-white font-medium">
@@ -27,7 +27,8 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <button className="px-6 py-2 hidden md:flex bg-primary text-white rounded-lg shadow-lg hover:scale-105 transition-transform">
+       <div>
+       <button className="px-6 py-2 hidden md:flex bg-primary text-white rounded-lg shadow-lg hover:scale-105 transition-transform">
           Get Started
         </button>
 
@@ -38,6 +39,7 @@ const Header = () => {
         >
           {menuOpen ? "✖" : "☰"}
         </button>
+       </div>
       </div>
 
       {/* Mobile Menu (Only visible when menuOpen is true) */}
