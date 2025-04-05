@@ -7,6 +7,8 @@ import Service from '../components/home/Service';
 import Testimonial from '../components/home/TestimonialSlider/Testimonial';
 import FadeInWrapper from '../components/animations/FadwInWrapper';
 import ContactForm from '../components/home/ContactForm';
+import Work from '../components/home/Work';
+
 
 const HomePage: React.FC = () => {
 
@@ -27,12 +29,17 @@ const HomePage: React.FC = () => {
       </FadeInWrapper>
 
       <FadeInWrapper delay={0.6}>
+        <Work />
+      </FadeInWrapper>
+
+      <FadeInWrapper delay={0.6}>
         <Testimonial />
       </FadeInWrapper>
 
       <FadeInWrapper delay={0.6}>
         <ContactForm />
       </FadeInWrapper>
+     
     </div>
   );
 };
