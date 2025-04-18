@@ -36,8 +36,7 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-lg md:text-xl mt-6 max-w-3xl text-gray-300 leading-relaxed"
         >
-          At <span className="text-primary font-bold">Infinet Worx</span>, we deliver cutting-edge solutions that redefine digital experiences. 
-          From AI-powered automation to scalable cloud platforms, we shape the future of technology.
+          At <span className="text-primary font-bold">Infinet Worx</span>, our mission is to be your digital transformation partner of choice, delivering results with precision, agility, and innovation.
         </motion.p>
 
         {/* Key Points with Animated Badges */}

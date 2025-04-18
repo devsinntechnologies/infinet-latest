@@ -47,8 +47,7 @@ const Heading: React.FC = () => {
         Our Premium Services
       </h1>
       <p className="text-lg text-gray-300 max-w-2xl">
-        We redefine excellence with cutting-edge technology, AI, and automation
-        services tailored to your needs.
+      At Infinetworx, we deliver strategic and technical services that accelerate enterprise transformation through Data, Artificial Intelligence, Enterprise Systems, and Professional Services. 
       </p>
     </motion.div>
   );
@@ -94,43 +93,43 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 const Mission: React.FC = () => {
   const services = [
     {
-      title: "Technology",
-      subtitle: "Services",
-      description: "Advanced solutions for businesses and individuals.",
+      subtitle: "Professional",
+      title: "Services",
+      description: "Our Professional Services team provides strategic guidance, technical delivery, and on-ground execution to help enterprises meet business goals with precision and speed.",
       icon: <FaCogs />,
     },
     {
-      title: "Artificial",
-      subtitle: "Technology",
+      subtitle: "Intelligent Automation ",
+      title: "& Integration",
       description:
-        "Integrating AI to enhance automation and decision-making.",
+        "We bridge system silos and streamline operations with smart integration patterns and AI-powered process automation frameworks.",
       icon: <FaBrain />,
     },
     {
-      title: "Outsourced",
-      subtitle: "Development",
-      description: "Custom development services tailored to your needs.",
+      subtitle: "SAP Services",
+      title: "& Implementation",
+      description: "We offer comprehensive SAP consulting, implementation, and integration services, enabling businesses to fully leverage SAP S/4HANA, SAP BTP, and other modules for operational excellence.",
       icon: <FaCode />,
     },
     {
-      title: "Robotic",
-      subtitle: "Automation",
+      subtitle: "Governance, Security ",
+      title: "& Compliance",
       description:
-        "Building efficient robotic process automation systems.",
+        "We help organizations establish a foundation of trust, compliance, and control across the entire data and application landscape.",
       icon: <FaRobot />,
     },
     {
-      title: "Application",
-      subtitle: "Security",
+      subtitle: "Application",
+      title: "Security",
       description:
         "Protecting your digital assets with cutting-edge security solutions.",
       icon: <FaShieldAlt />,
     },
     {
-      title: "Data",
-      subtitle: "Analytics",
+      subtitle: "Data",
+      title: "and AI",
       description:
-        "Turning raw data into actionable insights for better decision-making.",
+        "We design intelligent ecosystems that transform raw data into actionable intelligence using scalable cloud-native platforms and cutting-edge AI.",
       icon: <FaChartBar />,
     },
   ];

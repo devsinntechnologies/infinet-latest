@@ -17,9 +17,7 @@ const AboutSection = () => {
       >
         <h2 className="text-5xl font-bold text-gray-800 pb-5 sm:pb-10">About Us</h2>
         <p className="xl:text-xl md:text-lg sm:text-2xl text-lg leading-relaxed">
-          At <span className="font-semibold text-primary">Infinet Worx</span>, we provide innovative and scalable
-          technology solutions that drive business success. Our expertise transforms digital experiences, fostering
-          growth and efficiency.
+        <span className="font-semibold text-primary">Infinet Worx</span>,is a next-generation technology company specializing in Data Intelligence, Artificial Intelligence, and Digital Systems Architecture. We are committed to driving enterprise innovation through intelligent, data-first strategies that transform operations, accelerate insights, and enable autonomous decision-making at scale.
         </p>
         <p className="xl:text-xl md:text-lg sm:text-2xl text-lg leading-relaxed">
           From AI-driven automation to cloud solutions, we deliver cutting-edge services tailored to your needs.

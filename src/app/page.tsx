@@ -8,6 +8,7 @@ import Testimonial from '../components/home/TestimonialSlider/Testimonial';
 import FadeInWrapper from '../components/animations/FadwInWrapper';
 import ContactForm from '../components/home/ContactForm';
 import Work from '../components/home/Work';
+import TechnologyStack from '../components/home/TechnologyStack';
 
 
 const HomePage: React.FC = () => {
@@ -28,8 +29,13 @@ const HomePage: React.FC = () => {
         <Service />
       </FadeInWrapper>
 
+
       <FadeInWrapper delay={0.6}>
         <Work />
+      </FadeInWrapper>
+
+      <FadeInWrapper delay={0.4}>
+        <TechnologyStack />
       </FadeInWrapper>
 
       <FadeInWrapper delay={0.6}>

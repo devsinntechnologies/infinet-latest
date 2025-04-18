@@ -56,7 +56,7 @@ const WorkSection: React.FC = () => {
       </h1>
 
       {/* Paragraph Section */}
-      <div className="mt-12 ml-8 max-w-[350px] space-y-4">
+      <div className="mt-12 ml-8 max-w-[500px] space-y-4">
         <motion.p
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ const WorkSection: React.FC = () => {
           transition={{ ease: "easeIn", duration: 0.1, delay: 0.7 }}
           className="text-[18px] sm:text-[21px] leading-7"
         >
-          <b className="text-[#F48F5D]">INFINETWORS</b> is built for peer-to-peer
+         <b className="text-primary">Precision in Delivery:</b> We don’t just build models—we operationalize intelligence across your enterprise value chain.
         </motion.p>
 
         <motion.p
@@ -74,7 +74,7 @@ const WorkSection: React.FC = () => {
           transition={{ ease: "easeIn", duration: 0.3, delay: 0.7 }}
           className="text-[18px] sm:text-[21px] leading-7"
         >
-          coordination, shared ownership and the
+         <b className="text-primary">Speed + Scale:</b> Agile, modular deployments that scale from proof of concept to full enterprise rollout.
         </motion.p>
 
         <motion.p
@@ -84,7 +84,7 @@ const WorkSection: React.FC = () => {
           transition={{ ease: "easeIn", duration: 0.5, delay: 0.7 }}
           className="text-[18px] sm:text-[21px] leading-7"
         >
-          formation of communities around
+        <b className="text-primary">Elite Engineering Talent:</b>  A team of PhDs, AI researchers, cloud architects, and data engineers.
         </motion.p>
 
         <motion.p
@@ -94,7 +94,7 @@ const WorkSection: React.FC = () => {
           transition={{ ease: "easeIn", duration: 0.5, delay: 0.7 }}
           className="text-[18px] sm:text-[21px] leading-7"
         >
-          physical and digital property.
+         <b className="text-primary">Strategic Partnering:</b> Collaborative, outcome-driven, and aligned to your KPIs and industry regulations.
         </motion.p>
       </div>
     </section>
