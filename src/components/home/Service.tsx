@@ -1,15 +1,10 @@
 "use client";
 
 import React from "react";
-import {
-  FaRobot,
-  FaChartBar,
-  FaCogs,
-  FaShieldAlt,
-  FaCode,
-  FaBrain,
-} from "react-icons/fa";
 import { motion } from "framer-motion";
+import servicesData from "@/src/components/data/services.json";
+import { useRouter } from "next/navigation"; // For dynamic routing
+
 
 // Animation Variants
 const fadeInUp = {
@@ -54,85 +49,50 @@ const Heading: React.FC = () => {
 };
 
 interface ServiceCardProps {
+  id: string;
   title: string;
   subtitle: string;
   description: string;
-  icon: React.ReactElement;
   index: number;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
+  id,
   title,
   subtitle,
   description,
-  icon,
   index,
 }) => {
+  const router = useRouter();
+
   return (
     <motion.div
+      onClick={() => router.push(`/services/${id}`)}
       custom={index}
       initial="hidden"
       animate="visible"
       variants={fadeInUp}
-      className="relative bg-white bg-opacity-10 border border-primary p-8 rounded-xl shadow-xl backdrop-blur-md transition-transform duration-300 hover:text-gray-700 hover:scale-105 group"
+      className="cursor-pointer relative flex flex-col justify-between bg-white bg-opacity-10 border border-primary p-6 rounded-xl shadow-xl backdrop-blur-md transition-transform duration-300 hover:text-gray-700 hover:scale-105 group"
     >
-      <div className="text-5xl text-primary mb-2">{icon}</div>
-      <h3 className="text-3xl font-semibold opacity-0 group-hover:opacity-100 text-black mb-2">
-        {subtitle}
-      </h3>
-      <h4 className="text-xl text-black font-light opacity-40 group-hover:opacity-100 transition-opacity duration-300">
-        {title}
-      </h4>
-      <p className="text-black mt-3 opacity-40 group-hover:opacity-100 transition-opacity duration-300">
-        {description}
-      </p>
+      <div>
+        <h3 className="text-3xl font-semibold opacity-0 group-hover:opacity-100 text-black mb-2">
+          {subtitle}
+        </h3>
+        <h4 className="text-xl text-black font-light opacity-40 group-hover:opacity-100 transition-opacity duration-300">
+          {title}
+        </h4>
+        <p className="text-black text-sm mt-3 opacity-40 group-hover:opacity-100 transition-opacity duration-300">
+          {description}
+        </p>
+      </div>
+      <button className="mt-6 self-start px-4 py-2 bg-primary text-white rounded-full hover:bg-white hover:text-primary border border-primary transition duration-300">
+        See Details
+      </button>
     </motion.div>
   );
 };
-
 const Mission: React.FC = () => {
-  const services = [
-    {
-      subtitle: "Professional",
-      title: "Services",
-      description: "Our Professional Services team provides strategic guidance, technical delivery, and on-ground execution to help enterprises meet business goals with precision and speed.",
-      icon: <FaCogs />,
-    },
-    {
-      subtitle: "Intelligent Automation ",
-      title: "& Integration",
-      description:
-        "We bridge system silos and streamline operations with smart integration patterns and AI-powered process automation frameworks.",
-      icon: <FaBrain />,
-    },
-    {
-      subtitle: "SAP Services",
-      title: "& Implementation",
-      description: "We offer comprehensive SAP consulting, implementation, and integration services, enabling businesses to fully leverage SAP S/4HANA, SAP BTP, and other modules for operational excellence.",
-      icon: <FaCode />,
-    },
-    {
-      subtitle: "Governance, Security ",
-      title: "& Compliance",
-      description:
-        "We help organizations establish a foundation of trust, compliance, and control across the entire data and application landscape.",
-      icon: <FaRobot />,
-    },
-    {
-      subtitle: "Application",
-      title: "Security",
-      description:
-        "Protecting your digital assets with cutting-edge security solutions.",
-      icon: <FaShieldAlt />,
-    },
-    {
-      subtitle: "Data",
-      title: "and AI",
-      description:
-        "We design intelligent ecosystems that transform raw data into actionable intelligence using scalable cloud-native platforms and cutting-edge AI.",
-      icon: <FaChartBar />,
-    },
-  ];
+  const services = servicesData.services;
 
   return (
     <motion.div
@@ -142,11 +102,19 @@ const Mission: React.FC = () => {
       animate="visible"
     >
       {services.map((service, index) => (
-        <ServiceCard key={index} {...service} index={index} />
+        <ServiceCard
+          key={service.id}
+          id={service.id}
+          title={service.title}
+          subtitle={service.subtitle}
+          description={service.description}
+          index={index}
+        />
       ))}
     </motion.div>
   );
 };
+
 
 const ServiceSection: React.FC = () => {
   return (

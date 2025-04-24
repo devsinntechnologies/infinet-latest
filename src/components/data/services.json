@@ -1,0 +1,84 @@
+{
+    "services": [
+        {
+            "id": "data-ai-services",
+            "subtitle": "Data",
+            "title": "and AI",
+            "description": "We design intelligent ecosystems that transform raw data into actionable intelligence using scalable cloud-native platforms and cutting-edge AI.",
+            "points": [
+                "Data Platform Architecture (Lakehouse, Data Mesh, Modern DW)",
+                "ETL/ELT Pipelines and Real-Time Data Streams",
+                "AI/ML Model Development & MLOps",
+                "NLP, Computer Vision, and Generative AI",
+                "Advanced Analytics, Forecasting & Simulation"
+            ]
+        },
+        {
+            "id": "sap-services-implementation",
+            "subtitle": "SAP Services",
+            "title": "& Implementation",
+            "description": "We offer comprehensive SAP consulting, implementation, and integration services, enabling businesses to fully leverage SAP S/4HANA, SAP BTP, and other modules for operational excellence.",
+            "points": [
+                "SAP S/4HANA Implementation & Rollouts",
+                "SAP Integration (IRBM e-Invoicing, API, Middleware)",
+                "SAP Analytics Cloud & Embedded AI",
+                "SAP BTP Services (CAP, Fiori, Workflow, Integration Suite)",
+                "Functional Modules (SD, MM, PP, FICO, SuccessFactors)",
+                "Post-Implementation Support & Optimization"
+            ]
+        },
+        {
+            "id": "professional-services",
+            "subtitle": "Professional",
+            "title": "Services",
+            "description": "Our Professional Services team provides strategic guidance, technical delivery, and on-ground execution to help enterprises meet business goals with precision and speed.",
+            "points": [
+                "IT Strategy & Architecture Consulting",
+                "Digital Transformation Advisory",
+                "Project & Program Management (PMO-as-a-Service)",
+                "Change Management & User Enablement",
+                "Cloud Migration & Modernization",
+                "Enterprise System Health Checks & Audits"
+            ]
+        },
+        {
+            "id": "intelligent-automation-integration",
+            "subtitle": "Intelligent Automation ",
+            "title": "& Integration",
+            "description": "We bridge system silos and streamline operations with smart integration patterns and AI-powered process automation frameworks.",
+            "points": [
+                "RPA & Hyperautomation",
+                "Workflow Automation (SAP, Microsoft Power Platform)",
+                "Document Understanding (OCR, Invoice Processing, Contracts)",
+                "ERP, CRM, and SCM Integrations",
+                "API Gateway and Middleware Deployment"
+            ]
+        },
+        {
+            "id": "governance-security-compliance",
+            "subtitle": "Governance, Security ",
+            "title": "& Compliance",
+            "description": "We help organizations establish a foundation of trust, compliance, and control across the entire data and application landscape.",
+            "points": [
+                "Enterprise Data Governance Frameworks",
+                "Security Architecture & Data Access Controls",
+                "Compliance Alignment (PDPA, GDPR, ISO 27001)",
+                "Metadata Management & Data Lineage",
+                "Risk & Audit Automation"
+            ]
+        },
+        {
+            "id": "industries-we-serve",
+            "subtitle": "Industries ",
+            "title": "We Serve",
+            "description": "At Infinetworx, our mission is to be your digital transformation partner of choice, delivering results with precision, agility, and innovation.",
+            "points": [
+                "Energy & Resources – Asset reliability, energy data platforms, emissions analytics",
+                "Financial Services – KYC/AML, customer insights, fraud detection",
+                "Manufacturing – Smart factory analytics, digital twin, supply chain forecasting",
+                "Healthcare & Pharma – AI for diagnostics, patient data platforms, compliance automation",
+                "Public Sector – Citizen engagement systems, smart governance, national platforms"
+            ]
+        }
+    ]
+}
